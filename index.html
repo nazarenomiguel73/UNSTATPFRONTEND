@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TP2 - Front End</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Trabajo Práctico Nº2 - Front End</h1>
+
+  <!-- SECCIÓN ARREGLOS -->
+  <section>
+    <h2>Operaciones con Arreglos</h2>
+    <button onclick="ejecutarOperaciones()">Generar y Calcular</button>
+    <div id="resultados-arreglo"></div>
+  </section>
+
+  <!-- SECCIÓN FORMULARIO -->
+  <section>
+    <h2>Formulario de Alumno</h2>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="apellido" placeholder="Apellido">
+      <input type="text" id="legajo" placeholder="Legajo">
+      <input type="email" id="email" placeholder="Email">
+
+      <!-- Notas -->
+      <h3>Notas de 5 materias:</h3>
+      <input type="number" class="nota" placeholder="Nota 1">
+      <input type="number" class="nota" placeholder="Nota 2">
+      <input type="number" class="nota" placeholder="Nota 3">
+      <input type="number" class="nota" placeholder="Nota 4">
+      <input type="number" class="nota" placeholder="Nota 5">
+
+      <button type="submit">Calcular Promedio</button>
+    </form>
+
+    <p id="resultado-promedio"></p>
+    <p id="error" class="error"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
